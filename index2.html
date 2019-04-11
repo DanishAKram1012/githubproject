@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <title>On line kwiz</title>
+   <link href="style.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src='main.js'></script>
 </head>
 <body>
-    <h1>hello danish</h1>\
-    <h2>this is my first project</h2>
-    <h3>how to connect with github</h3>
-    <h4>This is first change</h4>
+    <h1>This is best quiz </h1>
+    <form id="quiz" name="quiz">
+        
+        <p class="questions">What is the capital of Pakistan</p>
+        <input id="textbox" type="text" name="question1">
+        
+        <p class="questions">what is the capital city of Afganistan</p>
+        <input id="mc" type="radio" name="question2" value="Kabul">Kabul <br>
+        <input id="mc" type="radio" name="question2" value="Qandhar">Qandhar <br>
+        
+        <p class="questions">What is the capital of America</p>
+        <input type="radio" id="mc" name="question3" value="Newyork">Newyork <br>
+        <input type="radio" id="mc" name="question3" value="Washington">Washington <br>
+
+        <input id = "button" type = "button" value = "I'm finished!" onclick = "check()">
+    </form>
+<div id="after_submit">
+    <p id="number_correct"></p>
+    <p id="message"></p>
+    <img id="picture">
+</div>
 </body>
 </html>
